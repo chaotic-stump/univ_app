@@ -9,3 +9,7 @@ body {
 main {
   flex: 1 0 auto;
 }
+
+.card .card-content {
+  min-height: 9em;
+}
