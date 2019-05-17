@@ -4,11 +4,12 @@
   </div>
 
   <div class="row">
+    <% @courses.each do |course| %>
     <div class="col s12 m6">
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
-          <span class="card-title">CS111: Intro to Computer Science</span>
-          <p>A thorough intro to Computer Science. Spicy jalapeno bacon ipsum dolor amet in incididunt lorem tail ground round cupidatat. Chuck consectetur irure ut dolore landjaeger. Cow kielbasa pork chop tenderloin minim, bresaola chicken t-bone irure</p>
+          <span class="card-title"><%= course.short_name %>: <%= course.name %></span>
+          <p><%= course.description %></p>
         </div>
         <div class="card-action">
           <a href="#">Enroll</a>
@@ -16,19 +17,7 @@
         </div>
       </div>
     </div>
-
-    <div class="col s12 m6">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">CS112: Intro to Computer Science 2</span>
-          <p>An intermediate look at Computer Science. Spicy jalapeno bacon ipsum dolor amet in incididunt lorem tail ground round cupidatat. Chuck consectetur irure ut dolore landjaeger. Cow kielbasa pork chop tenderloin minim, bresaola chicken t-bone irure</p>
-        </div>
-        <div class="card-action">
-          <a href="#">Enroll</a>
-          <a href="#">Info</a>
-        </div>
-      </div>
-    </div>
+    <% end %>
   </div>
 
 
