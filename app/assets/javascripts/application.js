@@ -19,6 +19,7 @@
 $(document).ready(function() {
   $(".dropdown-trigger").dropdown();
   $(".sidenav").sidenav();
+  $("#fade-out-target").fadeOut(4000);
 });
 
 // You may also do:
