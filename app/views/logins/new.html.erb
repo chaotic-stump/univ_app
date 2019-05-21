@@ -7,14 +7,14 @@
           <%= form_for(:logins, html: {class: "col s12"}) do |f| %>
             <div class="row">
               <div class="input-field col s12">
-                <%= f.email_field :email, placeholder: "Enter you email address", autofocus: true  %>
+                ; <%= f.email_field :email, placeholder: "Enter you email address", autofocus: true  %>
                 <%= f.label :email %>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
                 <%= f.password_field :password, placeholder: "Enter your password" %>
-                <%= f.label :password %>
+                <%= f.label :password, class: "active" %>
               </div>
             </div>
             <div class="row">
